@@ -4,23 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/9c36c5aea5.js"
+      crossorigin="anonymous"
+    ></script>
     <title>G3 Architecture</title>
   </head>
   <body>
     <header class="bg-[#FF900E1A]">
       <nav class="w-11/12 mx-auto flex justify-between">
         <h1 class="font-bold text-2xl">G3 Architecture</h1>
-        <div class="space-x-3">
+        <div class="space-x-3 hidden lg:block">
           <a class="text-[#424242]" href="">Home</a>
           <a class="text-[#424242]" href="">About</a>
           <a class="text-[#424242]" href="">Contact Us</a>
           <a class="text-[#424242]" href="">Login</a>
         </div>
+        <span class="lg:hidden"><i class="fa-solid fa-bars"></i></span>
       </nav>
       <section
         class="flex flex-col justify-center items-center text-center mt-12 py-5"
       >
-        <div class="w-[860px] space-y-5">
+        <div class="lg:w-[860px] space-y-5 w-full">
           <h1 class="text-4xl font-bold">Brand New<br />Group of Architects</h1>
           <p class="text-gray-500">
             There are many variations of passages of Lorem Ipsum available, but
@@ -37,14 +42,29 @@
       </section>
     </header>
     <main>
-      <section class="flex justify-center items-center mt-14">
+      <section class="flex flex-col lg:flex-row justify-center items-center mt-14">
+        <div class="w-[450px] ml-16 space-y-3 lg:hidden">
+          <h4 class="font-bold">
+            <span class="text-gray-500">Quick list</span> <span>of Our</span>
+            <br />
+            <span class="text-[#FF900E]">Features</span>
+          </h4>
+          <p class="text-gray-500 text-xs">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even
+          </p>
+          <button class="bg-[#FF900E] p-3 text-white text-sm rounded-md">
+            Explore More
+          </button>
+        </div>
         <div class="grid grid-cols-2 gap-3">
           <img class="w-[250px]" src="./images/team1.png" alt="" />
           <img class="w-[250px]" src="./images/team2.png" alt="" />
           <img class="w-[250px]" src="./images/team3.png" alt="" />
           <img class="w-[250px]" src="./images/team4.png" alt="" />
         </div>
-        <div class="w-[450px] ml-16 space-y-3">
+        <div class="w-[450px] ml-16 space-y-3 hidden lg:block">
           <h4 class="font-bold">
             <span class="text-gray-500">Quick list</span> <span>of Our</span>
             <br />
@@ -117,7 +137,7 @@
           </div>
         </div>
       </section>
-      <section class="mt-14  space-y-6">
+      <section class="mt-14 space-y-6">
         <div class="w-11/12 mx-auto">
           <h1 class="text-2xl font-bold">Some Facts</h1>
           <p class="w-[500px]">
@@ -156,8 +176,10 @@
           </div>
         </div>
       </section>
-      <section class="mt-14  space-y-6">
-        <div class="flex flex-col justify-center items-center text-center space-y-3">
+      <section class="mt-14 space-y-6">
+        <div
+          class="flex flex-col justify-center items-center text-center space-y-3"
+        >
           <h1 class="text-2xl font-bold">Our Sponspors</h1>
           <p class="w-[500px]">
             There are many variations of passages of Lorem Ipsum available, but
@@ -165,16 +187,20 @@
           </p>
         </div>
         <div class="flex justify-evenly items-center bg-none">
-          <img src="./images/sponsors/amazon.png" alt="">
-          <img src="./images/sponsors/figma.png" alt="">
-          <img src="./images/sponsors/google.png" alt="">
-          <img src="./images/sponsors/telerama.png" alt="">
-          <img src="./images/sponsors/spotify.png" alt="">
+          <img src="./images/sponsors/amazon.png" alt="" />
+          <img src="./images/sponsors/figma.png" alt="" />
+          <img src="./images/sponsors/google.png" alt="" />
+          <img src="./images/sponsors/telerama.png" alt="" />
+          <img src="./images/sponsors/spotify.png" alt="" />
         </div>
       </section>
     </main>
-    <footer class="bg-[#FFF4E7] py-8 px-96 text-center mt-14 w-11/12 mx-auto rounded-xl">
-      <p class="text-[#424242]">All rights reserved copyright@2023 startup landing page design</p>
+    <footer
+      class="bg-[#FFF4E7] py-8 px-96 text-center mt-14 w-11/12 mx-auto rounded-xl"
+    >
+      <p class="text-[#424242]">
+        All rights reserved copyright@2023 startup landing page design
+      </p>
     </footer>
   </body>
 </html>
